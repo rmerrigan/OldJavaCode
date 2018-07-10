@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" opacity="0.9" prefHeight="276.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.CalcFXMLController">
+   <children>
+      <VBox layoutX="14.0" layoutY="43.0" prefHeight="187.0" prefWidth="84.0">
+         <children>
+            <Button fx:id="one" mnemonicParsing="false" onAction="#oneBtn" prefHeight="30.0" prefWidth="70.0" text="1" textFill="#076387">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="four" mnemonicParsing="false" onAction="#fourBtn" prefHeight="30.0" prefWidth="70.0" text="4" textFill="#076387">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="seven" mnemonicParsing="false" onAction="#sevenBtn" prefHeight="30.0" prefWidth="70.0" text="7" textFill="#076387">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="div" mnemonicParsing="false" onAction="#divBtn" prefHeight="30.0" prefWidth="70.0" text="/" textFill="#278245">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="clear" mnemonicParsing="false" onAction="#clrBtn" prefHeight="30.0" prefWidth="70.0" text="Clear">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="98.0" layoutY="43.0" prefHeight="187.0" prefWidth="84.0">
+         <children>
+            <Button fx:id="two" mnemonicParsing="false" onAction="#twoBtn" prefHeight="30.0" prefWidth="70.0" text="2" textFill="#076387">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="five" mnemonicParsing="false" onAction="#fiveBtn" prefHeight="30.0" prefWidth="70.0" text="5" textFill="#076387">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="eight" mnemonicParsing="false" onAction="#eightBtn" prefHeight="30.0" prefWidth="70.0" text="8" textFill="#076387">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="zero" mnemonicParsing="false" onAction="#zeroBtn" prefHeight="30.0" prefWidth="70.0" text="0" textFill="#076387">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="del" mnemonicParsing="false" onAction="#delBtn" prefHeight="30.0" prefWidth="70.0" text="Delete">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="182.0" layoutY="43.0" prefHeight="187.0" prefWidth="84.0">
+         <children>
+            <Button fx:id="three" mnemonicParsing="false" onAction="#threeBtn" prefHeight="30.0" prefWidth="70.0" text="3" textFill="#076387">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="six" mnemonicParsing="false" onAction="#sixBtn" prefHeight="30.0" prefWidth="70.0" text="6" textFill="#076387">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="nine" mnemonicParsing="false" onAction="#nineBtn" prefHeight="30.0" prefWidth="70.0" text="9" textFill="#076387">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="mul" mnemonicParsing="false" onAction="#mulBtn" prefHeight="30.0" prefWidth="70.0" text="*" textFill="#278245">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="decimal" mnemonicParsing="false" onAction="#decimalBtn" prefHeight="30.0" prefWidth="70.0" text="." textFill="#010803">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="266.0" layoutY="43.0" prefHeight="187.0" prefWidth="84.0">
+         <children>
+            <Button fx:id="add" mnemonicParsing="false" onAction="#addBtn" prefHeight="30.0" prefWidth="70.0" text="+" textFill="#278245">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="sub" mnemonicParsing="false" onAction="#subBtn" prefHeight="30.0" prefWidth="70.0" text="-" textFill="#278245">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#xSquaredBtn" prefHeight="30.0" prefWidth="70.0" text="x^2" textFill="#278245" fx:id="xSquared">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="addSubSign" mnemonicParsing="false" onAction="#signBtn" prefHeight="30.0" prefWidth="70.0" text="+/-" textFill="#278245">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="equal" mnemonicParsing="false" onAction="#equBtn" prefHeight="30.0" prefWidth="70.0" text="=">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <TextField fx:id="numInput" editable="false" layoutX="13.0" layoutY="218.0" prefHeight="44.0" prefWidth="374.0">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="285.0" text="Calculator" textFill="#a47810">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
